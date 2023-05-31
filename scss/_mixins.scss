@@ -1,0 +1,14 @@
+@mixin display($flex,$justify,$align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin text($size,$hight){
+    font-size: $size;
+    line-height: $hight;
+}
+%font{
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+}

@@ -1,0 +1,26 @@
+.discover{
+    &__title{
+        width: 806px;
+        margin-top: 50px;
+        margin-bottom: 37px;
+        @extend %font;
+        @include text(60px,72px);
+        color:$title-color;
+    }
+    &__bottom{
+        padding: 31px 1020px 501px 48px;
+        background: #799102;
+        border-radius: 30px;
+    }
+    &__subtitle{
+        @extend %font;
+        @include text(29px,32px);
+        color:$main-color;
+    }
+    &__text{
+        margin-bottom: 50px;
+        @extend %font;
+        @include text(22px,29px);
+        color:$main-color;
+    }
+}

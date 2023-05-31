@@ -1,0 +1,44 @@
+.header{
+    background: #002D2D;
+    position: relative;
+    &__start{
+        padding: 15px;
+        @extend %font;
+        @include text(16px,24px);
+        text-align: center;
+        color: #000000;
+        background: #A5E3B9;
+        border-radius: 0px;
+    }
+    &__img{
+        position: absolute;
+        left: 73%;
+        top: 28px;
+    }
+}
+.nav{
+    padding: 20px;
+    @include display(flex,space-between,none);
+    &__left{
+        @include display(flex,none,none);
+        &-list{
+            margin-left: 39px;
+            @extend %font;
+            @include text(16px,24px);
+            @include display (flex,none,center);
+            gap: 47px;  
+            color:$main-color;
+        }
+    }
+    &__right{
+        @include display(flex,none,none);
+        &-list{
+            margin-right: 30px;
+            @extend %font;
+            @include text(16px,24px);
+            @include display (flex,none,center);
+            gap: 30px;
+            color:$main-color;  
+        } 
+    }
+}

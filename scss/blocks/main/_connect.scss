@@ -1,0 +1,33 @@
+.connect{
+    position: relative;
+    &__wrapper{
+        @include display (flex,space-around,none);
+        flex-wrap: wrap;
+    }
+    &__title{
+        padding-top: 100px;
+        width: 318px;
+        @extend %font;
+        @include text(30px,40px);
+        letter-spacing: 0.621429px;
+        color:$title-color;
+    }
+    &__subtitle{
+        padding-top: 19px;
+        padding-bottom: 16px;
+        width: 364px;
+        @extend %font;
+        @include text(16px,24px);
+        color: #6B7177;
+
+    }
+    &__text{
+        @extend %font;
+        @include text(16px,24px);
+        color: #008060;
+    }
+    &__img  {
+        background-image: url(/images/Rectangle.png);
+        background-repeat: no-repeat;
+    }
+}
